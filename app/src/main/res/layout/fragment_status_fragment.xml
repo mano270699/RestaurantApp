@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".status_fragment">
+
+    <RelativeLayout
+        android:id="@+id/ly_order_not_canceled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_placed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/dark1"
+        android:visibility="invisible"
+        />
+    <ImageView
+        android:id="@+id/img_placed_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/w1"
+       />
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_placed"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/img_placed"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/color_text"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/preparing"
+       android:layout_below="@+id/tv_1"
+        android:layout_marginTop="85dp"
+        android:layout_toEndOf="@+id/img_placed"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/color_text"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dispatched"
+       android:layout_below="@+id/tv_2"
+        android:layout_marginTop="85dp"
+        android:layout_toEndOf="@+id/img_placed"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/color_text"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delivered"
+       android:layout_below="@+id/tv_3"
+        android:layout_marginTop="80dp"
+        android:layout_toEndOf="@+id/img_placed"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/color_text"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:layout_marginStart="80dp"
+        android:layout_below="@+id/img_placed" />
+
+    <ImageView
+    android:id="@+id/img_prepare"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/dark2"
+    android:layout_below="@+id/line1"
+    android:layout_marginStart="50dp"
+        android:visibility="invisible"/>
+    <ImageView
+        android:id="@+id/img_prepare_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/w2"
+        android:layout_below="@+id/line1"
+        android:layout_marginStart="50dp" />
+
+    <ImageView
+        android:id="@+id/line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:layout_marginStart="80dp"
+        android:layout_below="@+id/img_prepare" />
+
+    <ImageView
+        android:id="@+id/img_Dispatched"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dark3"
+        android:layout_below="@+id/line2"
+        android:layout_marginStart="50dp"
+        android:visibility="invisible"/>
+    <ImageView
+        android:id="@+id/img_Dispatched_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/w3"
+        android:layout_below="@+id/line2"
+        android:layout_marginStart="50dp" />
+
+    <ImageView
+        android:id="@+id/line3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:layout_marginStart="80dp"
+        android:layout_below="@+id/img_Dispatched" />
+
+    <ImageView
+        android:id="@+id/img_Delivered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dark4"
+        android:layout_below="@+id/line3"
+        android:layout_marginStart="50dp"
+        android:visibility="invisible"
+        />
+    <ImageView
+        android:id="@+id/img_Delivered_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/w4"
+        android:layout_below="@+id/line3"
+        android:layout_marginStart="50dp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ly_order_canceled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+    <ImageView
+        android:id="@+id/ic_canceld"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_canceled"
+        android:layout_centerInParent="true"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ic_canceld"
+        android:text="Your order has been canceled"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_text"
+        android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

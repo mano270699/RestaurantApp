@@ -1,0 +1,119 @@
+<resources>
+
+    <string name="app_name">Restaurant</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="search">Search...</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="myname">Ahmed Mamdouh</string>
+    <string name="the_app_developer">The App Developer</string>
+
+    <string-array name="choice_items">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string name="title_activity_maps">Map</string>
+    <string name="login">Login</string>
+    <string name="forget_password">Forget Password ?</string>
+    <string name="sing_up">Sing up</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="sing_up_btn">Sing Up</string>
+    <string name="already_have_account">Already have Account ?</string>
+    <string name="restaurant_app">Restaurant APP</string>
+    <string name="experience_a_world_of_food">Experience a world of food</string>
+    <string name="get_food">Get Food</string>
+    <string name="log_in">LOG IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="get_good_flavors">Get Good Flavors</string>
+    <string name="experience_a_world_of_food_with_your_nfavorite_restaurant">Experience a world of food , with your \nfavorite restaurant</string>
+    <string name="save">SAVE</string>
+    <string name="how_many_people">How Many people ?</string>
+    <string name="_1_people" >1 people</string>
+    <string name="what_time_will_you_come">What time will you come ?</string>
+    <string name="pick_time">Pick Time</string>
+    <string name="what_day_will_you_come">What day will you come ?</string>
+    <string name="pick_day">Pick Day</string>
+    <string name="what_table_do_you_want">What table do you want ?</string>
+    <string name="pick_table">Pick Table</string>
+    <string name="write_a_review">WRITE A REVIEW</string>
+    <string name="book_table">BOOK TABLE</string>
+    <string name="your_name">Your name..</string>
+    <string name="address">Address..</string>
+    <string name="phone">phone..</string>
+
+    <string name="set_address">Set Address</string>
+    <string name="edit_address">Edit Address</string>
+    <string name="book_table_title">Book Table</string>
+    <string name="forget_password_page">Reset Password</string>
+    <string name="rest_password">Rest Password</string>
+
+    <string name="My_Orders">My Order</string>
+    <string name="save_nav">Favorite </string>
+    <string name="offer">Offer</string>
+    <string name="logout">Logout</string>
+    <string name="language">Language</string>
+
+
+    <string name="checkout">Checkout</string>
+    <string name="delivery">Delivery</string>
+    <string name="payment">Payment</string>
+    <string name="summary">Summary</string>
+    <string name="payment_btn">PAYMENT</string>
+    <string name="customer_feedback">Customer Feedback</string>
+    <string name="rate_now">Rate Now</string>
+    <string name="send_review">SEND Feedback</string>
+    <string name="write_a_reviewfb">Write a Review</string>
+    <string name="details">Details</string>
+    <string name="best_rats">Best Rats</string>
+    <string name="best_deals">Best Deals</string>
+    <string name="description">Description</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="ok">Ok</string>
+    <string name="menu">Menu</string>
+    <string name="offers">Offers</string>
+    <string name="order_details">Order Details</string>
+    <string name="order_in">order in</string>
+    <string name="order_number">order number</string>
+    <string name="total_price">Total Price</string>
+    <string name="order_status">order Status</string>
+
+    <string name="myorder">MyOrder</string>
+    <string name="cart">Cart</string>
+    <string name="popular_category">Popular Category</string>
+
+    <string name="most_popular">Most Popular</string>
+    <string name="thank_you">Thank You !</string>
+    <string name="your_order_is_successfully">Your order is successfully.</string>
+    <string name="_20">20$</string>
+    <string name="some_text">Some Text</string>
+    <string name="customer_feedbacks">Customer FeedBack</string>
+    <string name="write_a_reviews">Write A Review</string>
+    <string name="favorite">Favorite</string>
+    <string name="address_details">Address Details</string>
+    <string name="change">Change</string>
+    <string name="delivary">DELIVARY</string>
+    <string name="book_a_table">Book A Table</string>
+    <string name="your_order">YOUR ORDER</string>
+    <string name="suptotal">Suptotal</string>
+    <string name="shipping">Shipping</string>
+    <string name="total">Total</string>
+    <string name="delivery_method">Delivery Method</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="order_placed">Order placed</string>
+    <string name="preparing">Preparing</string>
+    <string name="dispatched">Dispatched</string>
+    <string name="delivered">Delivered</string>
+    <string name="quantity">Quantity:</string>
+
+    <string name="home">Home</string>
+
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/saved_card"
+    layout_height="200dp"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="5dp"
+    android:elevation="5dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="5dp"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageView
+        android:id="@+id/meal_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+    </ImageView>
+    <ImageView
+        android:id="@+id/deleteSaved"
+        android:layout_width="wrap_content"
+        android:tint="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete_black_24dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="7dp"
+
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:alpha="0.7"
+
+
+        android:background="@drawable/bg_rec_menu"
+        android:padding="10dp"
+        android:textColor="@color/wight">
+
+        <TextView
+            android:id="@+id/saved_meal_Title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="Burger Sandwish"
+            android:textColor="@color/wight"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/meal_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/saved_meal_Title"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rec_btn_price"
+            android:paddingStart="30dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="30dp"
+            android:paddingBottom="5dp"
+            android:text="20$"
+            android:textColor="@color/color_text"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

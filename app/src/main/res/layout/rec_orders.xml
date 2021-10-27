@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/order_card"
+
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="15dp"
+
+    android:elevation="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        >
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15 Oct"
+        android:textColor="@color/color_text"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_num_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 item order"
+        android:textColor="@color/color_text"
+        android:textStyle="bold"
+       android:layout_centerHorizontal="true"
+
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delivered"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+
+        android:layout_below="@+id/tv_num_item"
+       android:layout_centerHorizontal="true"
+
+        />
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text=" $ 15.00"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01:45 pm"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/tv_date"
+        android:textColor="@color/color_text"
+        android:textStyle="bold"
+
+
+        />
+    <TextView
+        android:id="@+id/tv_cash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COD"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/tv_price"
+        android:textColor="@color/color_text"
+        android:textStyle="bold"
+
+
+        />
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

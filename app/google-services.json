@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "11718843695",
+    "firebase_url": "https://restaurant-app-b9a72.firebaseio.com",
+    "project_id": "restaurant-app-b9a72",
+    "storage_bucket": "restaurant-app-b9a72.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:11718843695:android:94c0f52d9c5e6d61bfd5da",
+        "android_client_info": {
+          "package_name": "com.ahmed.newpro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "11718843695-eq7k5b1oejac82gj07pno856tlrcf195.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAndyU_lNR4DkWDnYYk3IWnKTsxxpiV0SY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "11718843695-eq7k5b1oejac82gj07pno856tlrcf195.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wight"
+    tools:context=".order_path_details">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+
+
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+        <TextView
+            android:id="@+id/meal_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="@string/order_details"
+
+            android:textColor="@color/wight"
+
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="gotomain"
+            android:src="@drawable/arrow_back" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/tv_date_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_in"
+        android:textSize="16sp"
+        android:layout_margin="10dp"
+        android:textColor="@color/t_color"
+        android:layout_below="@+id/toolbar"
+        />
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15 oct"
+        android:layout_marginStart="20dp"
+        android:textSize="16sp"
+        android:textColor="@color/color_text"
+        android:layout_below="@+id/tv_date_h"
+        />
+
+    <TextView
+        android:id="@+id/tv_order_num_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_number"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/t_color"
+        android:layout_below="@+id/toolbar"
+       android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/tv_ordernum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="152"
+        android:layout_marginStart="100dp"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/color_text"
+        android:layout_below="@+id/tv_order_num_h"
+        />
+    <TextView
+        android:id="@+id/tv_total_price_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_price"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+      android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/t_color"
+        android:layout_below="@+id/toolbar"
+
+        />
+    <TextView
+        android:id="@+id/tv_total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15 $"
+        android:layout_marginStart="100dp"
+        android:textSize="16sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/color_text"
+        android:layout_below="@+id/tv_total_price_h"
+        />
+
+
+    <View android:layout_width="match_parent"
+        android:id="@+id/split1"
+        android:layout_below="@+id/tv_date"
+        android:layout_marginTop="5dp"
+        android:layout_height="1dp"
+        android:background="@color/t_color"
+
+        />
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/split1"
+        android:layout_marginTop="14dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/colorPrimaryDark"
+        app:tabIndicator="@drawable/indicator"
+        app:tabTextColor="@color/color_text"
+        android:background="@color/wight"
+        >
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_status"
+
+            />
+
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_details" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/main_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tab_ly"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="52dp"
+            >
+
+            <fragment
+                android:id="@+id/fragment2"
+                android:name="com.ahmed.newpro.status_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+</RelativeLayout>

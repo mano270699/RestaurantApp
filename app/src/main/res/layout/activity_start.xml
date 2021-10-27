@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Start">
+
+
+    <TextView
+        android:id="@+id/textstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+
+        android:text="@string/restaurant_app"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/color_text"
+
+        android:textSize="24sp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+    android:id="@+id/descText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textstart"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+
+    android:text="@string/experience_a_world_of_food"
+    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+    android:textColor="@color/color_text"
+
+    android:textSize="14sp"
+    android:textStyle="bold"
+
+    />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="279dp"
+        android:layout_height="166dp"
+        app:srcCompat="@drawable/food"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="170dp"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/tomato2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="100dp"
+        android:visibility="visible" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/dish"
+        android:layout_below="@id/AButton"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="-50dp"
+
+        android:layout_alignParentEnd="true"
+
+        android:visibility="visible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="121dp"
+        android:layout_below="@id/AButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="280dp"
+
+
+        android:visibility="visible"
+
+        app:srcCompat="@drawable/ven" />
+
+
+    <Button
+        android:id="@+id/AButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rec_btn"
+        android:layout_below="@+id/textstart"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:text="@string/get_food"
+        android:elevation="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textAllCaps="true"
+        android:textColor="@color/wight"
+        android:onClick="goMain"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

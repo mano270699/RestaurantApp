@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_centerVertical="true"
+    android:background="@drawable/background"
+    tools:context=".Signup"
+
+
+    >
+
+    <TextView
+        android:id="@+id/signup_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:text="@string/sing_up"
+        android:textColor="@color/color_text"
+        android:textSize="24dp"
+        android:textStyle="bold"
+
+
+        />
+
+    <EditText
+        android:id="@+id/full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup_text"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rec_text"
+        android:hint="@string/full_name"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:imeOptions="actionDone"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:selectAllOnFocus="true"
+
+        />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/full_name"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rec_text"
+        android:hint="@string/prompt_email"
+
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+
+        android:selectAllOnFocus="true" />
+
+    <EditText
+        android:id="@+id/singup_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rec_text"
+        android:hint="@string/phone_number"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:imeOptions="actionDone"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:selectAllOnFocus="true" />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/singup_phone"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rec_text"
+
+        android:hint="@string/prompt_password"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:selectAllOnFocus="true" />
+
+    <Button
+        android:id="@+id/Singup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rec_btn"
+        android:gravity="center"
+        android:onClick="go_tologin"
+        android:padding="10dp"
+        android:text="@string/sing_up_btn"
+
+        android:textColor="@color/wight"
+        android:textSize="18sp"
+
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Singup"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/nirfont"
+        android:gravity="center"
+        android:onClick="Account_login"
+        android:text="@string/already_have_account"
+        android:textColor="@color/wight"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

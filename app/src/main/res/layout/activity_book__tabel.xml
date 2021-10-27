@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wight"
+    tools:context=".BOOK_Tabel">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+
+
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+        <TextView
+            android:id="@+id/meal_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="@string/book_table_title"
+
+            android:textColor="@color/wight"
+
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="gotocart"
+            android:src="@drawable/arrow_back" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/text_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="10dp"
+        android:text="@string/how_many_people"
+        android:textColor="@color/t_color"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/num_ppl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_header"
+        android:layout_marginStart="15dp"
+        android:text="@string/_1_people"
+        android:textColor="@color/color_text"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_min"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_header"
+        android:layout_toStartOf="@+id/tvnum"
+        android:src="@drawable/minus" />
+
+    <TextView
+        android:id="@+id/tvnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_header"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/iv_plus"
+        android:text="1"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_plus"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_header"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+
+        android:src="@drawable/plus" />
+
+    <View
+        android:id="@+id/split1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/num_ppl"
+        android:layout_marginTop="10dp"
+        android:background="@color/t_color"
+
+        />
+
+    <TextView
+        android:id="@+id/text_header2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/split1"
+        android:layout_margin="10dp"
+        android:text="@string/what_time_will_you_come"
+        android:textColor="@color/t_color"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_header2"
+        android:layout_marginStart="15dp"
+        android:text=""
+        android:textColor="@color/color_text"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_time"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+
+        android:layout_below="@+id/split1"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+
+
+        android:background="@drawable/rec_small"
+        android:text="@string/pick_time"
+        android:textAllCaps="false"
+        android:textColor="@color/wight"
+        android:textSize="12sp" />
+
+
+    <View
+        android:id="@+id/split2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_time"
+        android:layout_marginTop="10dp"
+        android:background="@color/t_color"
+
+        />
+
+    <TextView
+        android:id="@+id/text_header3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/split2"
+        android:layout_margin="10dp"
+        android:text="@string/what_day_will_you_come"
+        android:textColor="@color/t_color"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_DAY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_header3"
+        android:layout_marginStart="15dp"
+        android:text=""
+        android:textColor="@color/color_text"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_daypicker"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/split2"
+        android:layout_alignParentEnd="true"
+
+        android:layout_gravity="center"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+
+        android:background="@drawable/rec_small"
+        android:onClick="time_picker"
+        android:text="@string/pick_day"
+        android:textAllCaps="false"
+        android:textColor="@color/wight"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/split3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_DAY"
+        android:layout_marginTop="10dp"
+        android:background="@color/t_color"
+
+        />
+
+    <TextView
+        android:id="@+id/text_header4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/split3"
+        android:layout_margin="10dp"
+        android:text="@string/what_table_do_you_want"
+        android:textColor="@color/t_color"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_header4"
+        android:layout_marginStart="15dp"
+        android:text=""
+        android:textColor="@color/color_text"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_table"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/split3"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rec_small"
+
+        android:text="@string/pick_table"
+        android:textAllCaps="false"
+        android:textColor="@color/wight"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/split4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_table"
+        android:layout_marginTop="10dp"
+        android:background="@color/t_color"
+
+        />
+
+    <EditText
+
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/split4"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rec_btn_login"
+        android:gravity="start|top"
+        android:hint="@string/write_a_review"
+        android:inputType="textMultiLine"
+        android:padding="5dp"
+
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rec_btn_signup"
+        android:onClick="booktabel"
+        android:text="@string/book_table"
+        android:textColor="@color/wight"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
